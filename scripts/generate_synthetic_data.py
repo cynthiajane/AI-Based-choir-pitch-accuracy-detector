@@ -51,9 +51,9 @@ def generate_vocal_like_tone(freq, duration, sr):
     t = np.linspace(0, duration, int(sr * duration), endpoint=False)
 
     # Vibrato (human-like modulation)
-   # vibrato_rate = 6      # Hz
-   # vibrato_depth = 0.005
-   # vibrato = vibrato_depth * np.sin(2 * np.pi * vibrato_rate * t)
+    # vibrato_rate = 6      # Hz
+    # vibrato_depth = 0.005
+    # vibrato = vibrato_depth * np.sin(2 * np.pi * vibrato_rate * t)
 
     # Base tone with vibrato
     signal = np.sin(2 * np.pi * freq * (t)) #t+vibrato if we were to include vibrato 
